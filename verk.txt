@@ -1,0 +1,26 @@
+1.
+Gameloop sér til þess að leikurinn er uppfærður í smaræmi við FPS. 
+Þýðir ekki bara að leikurinn er update-aður við user input heldur er hann stanslaust að update-a,
+sem gerir leiknum kleift að hafa tónlist, mobs, ofl. í gangi meðann hann keyrir
+2.
+Leikjavél hjálpar manni að búa til leiki og koma líka með inbyggðu physics system sem minnkar kóðun. Þær eru líka með umhverfi(GUI) sem auðveldar leikjahönnun og gerð
+3.
+
+4. 
+Asset eru allir hlutir sem eru í leik, t.d. main characterinn er asset, og líka tröppurnar sem hann labbar upp eða sverðið sem hann heldur á.
+5. 
+Gameobject halda utan um components. t.d. scripts, skin, o.s.fr.
+6.
+prefabs eru GameObjects sem er búið að bæta við objects(child) og componets sem er svo vistað sem prefab. Þá er hægt að kalla á prefab og notaða það aftur og aftur með öllum objectunum og componentum
+7.
+Það er fljótlegra að rendera þríhyrninga en það er að rendera polygons. 
+8.
+Tags er leið til að nefna GameObject sem falla í sama hóp. t.d. er hægt að tagga alla enemies sem "enemy" þó að GameObjectin heita mismunandi nöfnum.
+Með layers er hægt að gúbba saman GameObjectum. Þetta kemur sér vel ef maður vill bara rendera sum object en ekki önnur
+9.
+1) Scene view er glugginn sem maður notar til að búa til leikinn og staðsetja asset.
+2) Game view er leikurinn sjálfur. Gameview uppfærist um leið og maður lætur niður asset sem 
+   gefur manni hugmynd um hvernig leikurinn mun líta út.
+3) Project heldur utan um öll gögn tengd leiknum. 
+4) Hierarchy er glugginn notaður til að halda utam um öll GameObject í leiknum
+5) Inspector sínir öll components sem að GameObject hefur og gildi
